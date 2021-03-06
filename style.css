@@ -87,6 +87,11 @@ main input[type="submit"]{
     font-weight: 600;
     font-size: 20px;
 }
+
+main input:hover{
+    cursor: pointer;
+}
+
 footer{
     width: 100%;
     margin-top: 10px;
@@ -100,8 +105,18 @@ footer input[type="checkbox"]{
     width: 12px;
     height: 12px;
 }
+
 footer #help{
     margin-left: 6rem;
+}
+
+#help:hover {
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+}
+
+footer span:hover{
+    cursor: pointer;
 }
 
 .entrarFacebook{
@@ -118,6 +133,11 @@ footer #help{
     margin-left: 4px;
 }
 
+.entrarFacebook a:hover{
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+}
+
 .entrarFacebook img{
     margin-top: 3rem;
     width: 1.2rem;
@@ -132,4 +152,9 @@ footer #help{
 .registrarNovo #grey{
     color: grey;
     font-size: 13px;
+}
+
+.registrarNovo #white:hover{
+    border-bottom: solid 1px white;
+    cursor: pointer;
 }
