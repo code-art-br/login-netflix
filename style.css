@@ -8,7 +8,7 @@
 }
 
 body{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url('img/background.jpg');
     background-repeat: no-repeat;
@@ -34,10 +34,14 @@ body{
     margin-left: 3vw;
 }
 
+section{
+    min-width: 30%;
+}
+
 main{
     background: rgba(0, 0, 0, 0.7);
     color: white;
-    width: 30vw;
+    min-width: 100%;
     height: 75vh;
     display: flex;
     border-radius: 4px;
@@ -48,15 +52,16 @@ main{
 main h2{
     font-weight: 800;
     letter-spacing: 1px;
-    margin-top: 7vh;
-    width: 30vw;
-    margin-left: 9rem;
+    margin-top: 10%;
+    width: 90%;
+    margin-left: 10%;
     font-size: 30px;
     margin-bottom: 0.5rem;
 }
 
 main form{
-    width: 30vw;
+    min-width: 90%;
+    min-height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,8 +69,8 @@ main form{
 }
 
 main input[type="Text"]{
-    width: 22vw;
-    height: 6vh;
+    min-width: 90%;
+    min-height: 18%;
     margin-top: 1rem;
     padding-left: 1.3rem;
     border: none;
@@ -77,8 +82,8 @@ main input[type="Text"]{
 }
 
 main input[type="submit"]{
-    width: 22vw;
-    height: 6vh;
+    min-width: 90%;
+    min-height: 18%;
     margin-top: 3rem;
     border: none;
     border-radius: 4px;
@@ -93,7 +98,7 @@ main input:hover{
 }
 
 footer{
-    width: 100%;
+    min-width: 90%;
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -107,7 +112,7 @@ footer input[type="checkbox"]{
 }
 
 footer #help{
-    margin-left: 6rem;
+    margin-left: 30%;
 }
 
 #help:hover {
@@ -121,6 +126,7 @@ footer span:hover{
 
 .entrarFacebook{
     width: 22vw;
+    margin-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -129,7 +135,6 @@ footer span:hover{
 .entrarFacebook a{
     color: grey;
     font-size: 13px;
-    margin-top: 3rem;
     margin-left: 4px;
 }
 
@@ -139,7 +144,6 @@ footer span:hover{
 }
 
 .entrarFacebook img{
-    margin-top: 3rem;
     width: 1.2rem;
     height: 1.2rem;
 }
@@ -158,3 +162,20 @@ footer span:hover{
     border-bottom: solid 1px white;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 999px) {
+    section{
+        min-width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 499px) {
+    section{
+        min-width: 100%;
+    }
+
+    main{
+        height: 90vh;
+
+    }
+  }
